@@ -15,37 +15,19 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 
 </head>
+
 <body>
 
-    <div class="grid-container">
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
-            <div class="container-fluid">
-                <i class="fa-solid fa-car"></i>
-              <a class="navbar-brand" href="#">Electric Cars</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Inicio</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Catalogo</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Ofertas</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Contacto</a>
-                  </li>
-                </ul>
-              </div>
+    <div class="grid-layout">
+        <nav>
+            <div class="sportcars">
+                <img src="./assets/img/car.svg" alt="car-logo">
+                <h6>Sports Cars</h6>
             </div>
-          </nav>
+        <img src="./assets/img/hamburger.svg" alt="menu">
+        </nav>
 
         <header>
-
             <h5>Ordenar Por:</h5>
             <div class="dropdown">
                 <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -60,12 +42,39 @@
         </header>
 
         <main>
+            <div class="card-container">
+                <div class="card">
+                    <img src="./assets/img/img1.jpg" alt="">
+                    <p>Model JT</p>
+                    <button>ver mas</button>
+                </div>
+                <div class="card">
+                    <img src="./assets/img/img1.jpg" alt="">
+                    <p>Model JT</p>
+                    <button>ver mas</button>
+                </div>
+                <div class="card">
+                    <img src="./assets/img/img1.jpg" alt="">
+                    <p>Model JT</p>
+                    <button>ver mas</button>
+                </div>
+                <div class="card">
+                    <img src="./assets/img/img1.jpg" alt="">
+                    <p>Model JT</p>
+                    <button>ver mas</button>
+                </div>
+            </div>
+
+            <div class="navigation">
+
+            </div>
+
 
         </main>
 
         <footer>
             <div class="icons">
-                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-facebook" fill="white"></i>
                 <i class="fa-brands fa-twitter"></i>
             </div>
             <p>Todos los derechos reservados</p>

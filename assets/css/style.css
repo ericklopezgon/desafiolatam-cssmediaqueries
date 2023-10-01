@@ -5,8 +5,10 @@
 
 /* Grid-mobile */
 
-.grid-container {
+.grid-layout {
+    height: 100vh;
     display: grid;
+    grid-template-rows: 1fr 1.2fr 10fr 1fr;
     grid-template-areas: 
     "nav nav"
     "header header"
@@ -15,11 +17,32 @@
     ;
 }
 
+/* menu de navegacion */
+
 nav {
     grid-area: nav;
     display: flex;
-
+    padding: 10px;
+    background-color: rgb(64, 1, 40);
+    justify-content: space-between;
+    color: white;
 }
+
+nav img {
+    width: 30px;
+    color: white;
+}
+
+.sportcars {
+    display: flex;
+    justify-content: center;
+}
+
+.sportcars h6 {
+    padding: 5px;
+    font-size: 1.2rem;
+}
+/* Barra ordenar por */
 
 header {
     grid-area: header;
@@ -27,11 +50,39 @@ header {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    background-color: rgb(196, 196, 196);
 }
+
+/* Grila de imagenes */
 
 main {
     grid-area: main;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
+
+.card-container {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+
+.card-container .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 400px;
+    height: fit-content;
+}
+
+.card-container .card img {
+    width: 400px;
+}
+
+/* pie de pagina */
 
 footer {
     grid-area: footer;
@@ -39,7 +90,7 @@ footer {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color: rgb(70, 70, 180);
-
+    background-color: rgb(54, 54, 54);
+    color: white;
 }
 
